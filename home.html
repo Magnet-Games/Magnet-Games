@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Magnet Games</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="manifest" href="manifest.json" />
+        <link rel="Stylesheet" href="./style.css">
+        <style>
+        </style>
+    </head>
+    <body id="body">
+        <audio id="myAudio" src="ambient.mp3" loop></audio>
+        <audio id="hoverAudio" src="hover.mp3"></audio>
+        <audio id="clickAudio" src="click.mp3"></audio>
+        <div class="cont">
+            <nav id="navBar" class="w3-border w3-card-4 w3-round-xlarge w3-animate-top w3-bar clear w3-xlarge londrina-solid-regular" style="max-width: 90%; position: fixed; z-index: 75">
+                <a href="#" class="w3-border-right w3-border-bottom w3-bar-item w3-mobile nav1">Home</a>
+                <a href="#" class="w3-border-right w3-border-bottom w3-bar-item w3-mobile nav2">Library</a>
+                <a href="#" class="w3-border-right w3-border-bottom w3-bar-item w3-mobile nav3">Store</a>
+                <a href="#" class="w3-border-right w3-border-bottom w3-bar-item w3-mobile nav4">Create</a>
+                <a href="#" class="w3-border-left  w3-border-bottom w3-bar-item w3-mobile nav5 w3-right">Settings</a>
+            </nav>
+        </div>
+        <div class="cont" id="start">
+            <r-br></r-br>
+            <h1>Magnet Games</h1>
+            <p>
+                Note that this web application requires sound to be enabled. Press the button to start the program and
+                enable sound. Sound effects and background music cannot be disabled as of right now, but it could
+                be added in the future.
+            </p>
+            <button id="homeBtn" onclick="openFullscreen();">Start Magnet Games</button>
+            <button onclick="window.open('home.html', '_blank', 'width=1920,height=1080');">Open Web App</button>
+        </div>
+        <r-main></r-main>
+        <div hidden id="main">
+            <div class="cont">  
+                <r-br></r-br>
+                <h2 class="w3-animate-top" id="message">Welcome</h2>
+                <h3>Recently Played</h3>
+                <div class="flex">
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 1</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 2</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 3</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 4</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile" >
+                        <h4 class="flextxt">Game 5</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                </div>
+                <r-br></r-br>
+                <h3>New and Fresh</h3>
+                <div class="flex">
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 1</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 2</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 3</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 4</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile" >
+                        <h4 class="flextxt">Game 5</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                </div>
+                <r-br></r-br>
+
+                <h3>Magnet Games Exclusives</h3>
+                <div class="flex">
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 1</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 2</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 3</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 4</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile" >
+                        <h4 class="flextxt">Game 5</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                </div>
+                <r-br></r-br>
+
+                <h3>All Games</h3>
+                <div class="flex">
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 1</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 2</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 3</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile">
+                        <h4 class="flextxt">Game 4</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                    <div class="flextile" >
+                        <h4 class="flextxt">Game 5</h4>
+                        <img width="250px" src="logo.png" onmouseover="hoverAudio.play()" onclick="clickAudio.play()"></img>
+                    </div>
+                </div>
+            </div>
+            <r-br></r-br>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video" style="opacity:0.2;">
+                <source src="effect.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <script src="dys.js"></script>
+        <script>
+            var elem = document.getElementById("body");
+            function openFullscreen() {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+            }
+            document.body.style.overflow = 'hidden';
+            const audio = document.getElementById('myAudio');
+            const btn = document.getElementById('playBtn');
+            const ft = document.getElementsByTagName('img');
+            let x = document.getElementById('main').innerHTML
+            let y = document.getElementById('navBar').innerHTML
+            let z = fetch('index.html');
+            let i = 999;
+            
+            render('br','<br/><br/><br/><br/><br/>');
+            evnt('homeBtn','click',function(){
+                $i('start').hidden = true; 
+                render('main', x);
+                audio.play();
+            });
+
+            document.addEventListener('fullscreenchange', () => {
+                if (!document.fullscreenElement) {
+                    window.history.back();
+                    location.reload();
+                }
+            });
+            frame(function(){
+                if (document.visibilityState === 'hidden') {
+                audio.pause();
+                }
+            });
+            
+
+        </script>
+    </body>
+</html>
